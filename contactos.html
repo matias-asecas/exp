@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="estilo_contactos.css">
+    <link rel="icon" href="Captura.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="Imagenes parcial/Icono one piece.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>One Piece</h1>
+        <nav>
+            <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> INICIO</a></li>
+                    <li><a href="blog.html"><i class="fas fa-pencil-alt"></i> BLOG</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-images"></i> GALERIA</a></li>
+                    <li><a href="video.html" class="activo"><i class="fas fa-video"></i> VIDEOS</a></li>
+                    <li><a href="contactos.html"><i class="fas fa-address-book"></i> CONTACTOS</a></li>
+                    <li><a href="nosotros.html"><i class="fas fa-users"></i> NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="contacto">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Av. Matusita 666<br>Perú. Urbanización los Bayardigans</p>
+            <p><strong>Teléfonos:</strong> 51 908 876 256 |  5335242</p>
+            <p><strong>Email:</strong> servicios@importandoluffys.com</p>
+
+            <h3>Horario de atención</h3>
+            <p><strong>Área de caja:</strong> de Lunes a feriados de 1 am a 11 pm.</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Escríbenos</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required pattern="[0-9]{9}">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="ruc">Calificanos:</label>
+                <input type="text" id="ruc" name="ruc">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Detalla tu requerimiento a continuación..."></textarea>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+
+        <section class="mapa">
+            <h2>Encuéntranos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249697.09089917497!2d-77.3552083969116!3d-12.076714476492404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1616cf217d7%3A0x76627619dc4ab3b3!2sALL%20BLUE%20FAST%20FOOD%20-%20Restaurante%20inspirado%20en%20One%20Piece!5e0!3m2!1ses-419!2spe!4v1731533646881!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div class="informacion-pie">
+            <p>ONE PIECE</p>
+            <p>Av. Sideral Carrion 444 - Barracones, Callao </p>
+            <p>(01) 205 - 2370</p>
+            <p>servicios@ONEPIECE.com.pe</p>
+        </div>
+        <div class="enlaces-pie">
+            <a href="#">Nosotros</a> | <a href="#">En busca del tesoro</a> | <a href="#">Condiciones de servicio al cliente</a>
+        </div>
+    </footer>
+</body>
+</html>
